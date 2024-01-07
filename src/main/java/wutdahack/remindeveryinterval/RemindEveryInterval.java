@@ -32,7 +32,7 @@ public class RemindEveryInterval {
         notifTextLabel.setLocation(0, 0);
         window.getContentPane().add(notifTextLabel);
 
-        JLabel timerTextLabel = new JLabel("timer delay in minutes");
+        JLabel timerTextLabel = new JLabel("how long until notif pops up in minutes");
         timerTextLabel.setSize(300, 50);
         timerTextLabel.setLocation(300, 0);
         window.getContentPane().add(timerTextLabel);
@@ -85,7 +85,7 @@ public class RemindEveryInterval {
 
     private static Timer createTimer(int timeInMinutes, String notifText) {
 
-        Timer timer = new Timer(timeInMinutes,
+        return new Timer(timeInMinutes,
                 actionEvent -> {
                     try {
                         playNotifSound();
@@ -95,8 +95,6 @@ public class RemindEveryInterval {
                         throw new RuntimeException(ex);
                     }
                 });
-
-        return timer;
     }
 
 
