@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RemindEveryIntervalJava:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RemindEveryIntervalJava_jar</output-path>
+    <root id="archive" name="RemindEveryIntervalJava.jar">
+      <element id="module-output" name="RemindEveryIntervalJava" />
+    </root>
+  </artifact>
+</component>
